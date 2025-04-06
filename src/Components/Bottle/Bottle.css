@@ -1,0 +1,10 @@
+.bottle img{
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+.bottle{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
