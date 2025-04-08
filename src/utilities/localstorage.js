@@ -1,7 +1,7 @@
 const getCartFromLocalStorage =() => {
-    const storedCartString = localStorage.get('cart')
+    const storedCartString = localStorage.getItem('cart')
     if(storedCartString){
-        const storedCart = JSON.parse(storedCart)
+        const storedCart = JSON.parse(storedCartString)
         return storedCart;
     }
     return []
@@ -18,4 +18,5 @@ const addItemToCartLocalStorage = id => {
     saveCartToLocalStorage(newCart);
 }
 
-export {getCartFromLocalStorage, addItemToCartLocalStorage}
+export {getCartFromLocalStorage as getCart,
+    addItemToCartLocalStorage as addCart}
